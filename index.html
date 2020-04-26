@@ -1,0 +1,334 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Home Eats - Homemade Food</title>
+
+</head>
+
+<body>
+    <!-- Login Modal Start -->
+    <div id="loginModal" class="modal fade" role="diaglog">
+        <div class="modal-dialog modal-lg modal-dialog-centered " role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" style="color:black;" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" style="background-color: whitesmoke">
+                    <form>
+                        <div class="form-group col-sm-4">
+                            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                placeholder="Enter email">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label class="sr-only" for="exampleInputPassword3">Password</label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                                placeholder="Password">
+                        </div>
+                        <div class="col-sm-auto">
+                            <div class="form-check">
+                                <input id="RememberCheckBox" class="form-check-input" type="checkbox">
+                                <label for="RememberCheckBox" class="form-check-label"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal End -->
+
+    <!-- Apply as Home Chef Modal Start -->
+    <div id="ChefModal" class="modal fade" role="diaglog">
+        <div class="modal-dialog modal-sm modal-dialog-centered " role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Apply as A Chef </h4>
+                    <button type="button" style="color:black;" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" style="background-color: whitesmoke">
+                    <form>
+                        <div class="form-group ">
+                            <label class="sr-only" for="exampleInputPassword3">Name</label>
+                            <input type="text" class="form-control form-control-sm mr-1" placeholder="Name">
+                        </div>
+                        <div class="form-group ">
+                            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                placeholder="Enter email">
+                        </div>
+                        <div class="form-group ">
+                            <label class="sr-only" for="exampleInputPassword3">Password</label>
+                            <input type="password" class="form-control form-control-sm mr-1" placeholder="Password">
+                        </div>
+                        <div class="form-group  input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                    aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="inputGroupFile01">Choose Photo</label>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Apply as Home Chef Modal End -->
+
+    <!-- Navbar Start -->
+    <div id="home-navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Assets/img/home/logo.png" width="15%" alt="">
+                <span class="navbar-text btn">HOME EATS</span>
+            </a>
+            <div class="col-md-8 col-sm-1">
+                <div class="input-group input-group-md ">
+                    <input type="text" class="form-control" placeholder="Pizza, Burger, Ice Cream...">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-outline-secondary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <div class="navbar-nav ml-auto">
+                <b><a class="nav-item nav-link" href="index.html">Home</a></b>
+                <a class="nav-item nav-link" href="meals.html">Meals</a>
+                <a class="nav-item nav-link" href="reviews.html">Reviews</a>
+                <a class="nav-item nav-link btn" id="login_btn">Login</a>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- content Start -->
+    <div id="home-bg">
+        <div id="home-bg-text" class="text-center">
+            <img src="Assets/img/home/logo.png" width="30%" />
+            <h1 class="display-2 text-uppercase">Home Eats</h1>
+            <h3 class="font-italic font-weight-light">Homemade food for you.</h3>
+        </div>
+    </div>
+
+    <div data-spy="scroll" data-target="#home-navbar">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="text-center mt-5">
+                        <h1 id="home" class="display-6 font-weight-light">Are you Hungry?!</h1>
+                        <p>What you are waiting for.. search for your favourite meal and ORDER NOW!</p>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="input-group input-group-lg mt-5 mb-5">
+                        <input type="text" class="form-control" placeholder="Pizza, Burger, Ice Cream...">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-secondary">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center mt-5">
+                        <h1 class="display-6 font-weight-light">What can we bring for you?!</h1>
+                    </div>
+                </div>
+                <div class="card-deck mt-3 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h4 class="card-title">Dishes</h4>
+                                <p class="card-text">These homemade meals are comfort food at its best. Make these
+                                    hearty dinner foods whenever you need them.</p>
+                            </div>
+                            <img class="card-img-top" src="Assets/img/home/dish.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h4 class="card-title">Desserts</h4>
+                                <p class="card-text">Discover delicious, from quick and easy sweet treats to super
+                                    indulgent and impressive showstoppers.</p>
+                            </div>
+                            <img class="card-img-top" src="Assets/img/home/dessert.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h4 class="card-title">Juice <span class="badge badge-danger">New</span></h4>
+                                <p class="card-text">Discover delicious, from quick and easy sweet treats to super
+                                    indulgent and impressive showstoppers.</p>
+                            </div>
+                            <img class="card-img-top" src="Assets/img/home/juice.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center mt-5">
+                        <h1 id="about" class="display-6 font-weight-light">How it Works?</h1>
+                        <p class="bg-light">We are trying to connect the homemade food chef that love cooking to the
+                            client
+                            that want to
+                            eat a fresh and healthy food. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-4">
+                <img src="https://img.icons8.com/color/96/000000/hand-with-smartphone.png" />
+            </div>
+            <div class="col-4">
+                <img src="https://img.icons8.com/color/96/000000/cooking-pot.png" />
+            </div>
+            <div class="col-4">
+                <img src="https://img.icons8.com/color/96/000000/pizza-delivery.png" />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-4">
+                <h3>Order</h3>
+                <p><b>Step 1: </b>Grab your phone and enter your Home Eats order!</p>
+            </div>
+            <div class="col-4">
+                <h3>Cook</h3>
+                <p><b>Step 2: </b>Wait for the home made food magic to happen and be cooked!</p>
+            </div>
+            <div class="col-4">
+                <h3>Deliver</h3>
+                <p><b>Step 3: </b>Get Your delicious food delivered to your doorstep!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Casourel -->
+    <div class="container mt-5">
+        <div class="row row-content">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide " data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active text-center">
+                            <img class="d-block img-fluid" src="Assets/img/home/FoodBuyer.jpeg" alt="family_eating">
+                            <div class="carousel-caption d-none d-md-block">
+                                <button type="button" class="btn btn-primary btn-lg carouselButton ">
+                                    Sign Up as Food Buyer
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img class="d-block img-fluid" src="Assets/img/home/HomeChef.jpg" alt="Food Maker">
+                            <div class="carousel-caption d-none d-md-block">
+                                <button id="ApplyChef_btn" type="button" class="btn btn-primary btn-lg carouselButton ">
+                                    Apply as a Home Chef
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img class="d-block img-fluid" src="Assets/img/home/deliveryBoy.png" alt="Delivery Boy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <button type="button" class="btn btn-primary btn-lg carouselButton ">
+                                    Apply as Delivery Boy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Casourel -->
+
+    <!-- Content End -->
+
+    <!-- Footer Start -->
+    <div class="jumbotron jumbotron-fluid mt-5 mb-0 text-center bg-light">
+        <div class="container">
+            <h1 id="contact" class="display-6 font-weight-light">HOME EATS</h1>
+            <div class="btn-group btn-group-lg mt-3 mb-3">
+                <a class="btn" href="#"><img class="social-link" src="Assets/img/home/facebook.png" alt="facebook"></a>
+                <a class="btn" href="#"><img class="social-link" src="Assets/img/home/twitter.png" alt="twitter"></a>
+                <a class="btn" href="#"><img class="social-link" src="Assets/img/home/github.png" alt="github"></a>
+            </div>
+
+            <hr class="my-2">
+
+            <ul class="list-group list-group-horizontal-md justify-content-center mt-4">
+                <li class="list-group-item list-group-item-dark col-md-4">
+                    <h6>ADDRESS</h6>
+                    <p>123 Ramses Street, Cairo, Egypt</p>
+                </li>
+                <li class="list-group-item list-group-item-dark col-md-4">
+                    <h6>EMAIL</h6>
+                    <p>contact@homeeats.com</p>
+                </li>
+                <li class="list-group-item list-group-item-dark col-md-4">
+                    <h6>MOBILE</h6>
+                    <p>+201000000000</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Assets/scripts/script.js"></script>
+</body>
+
+</html>

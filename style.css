@@ -1,0 +1,53 @@
+#home-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("Assets/img/home/background2.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ .dark-bg{
+   background-color: rgba(0, 0, 0, 0.9);
+   transition: 1s;
+   color: white;
+ }
+  #home-bg-text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .social-link {
+      width: 40px;
+      height: auto;
+      opacity: 0.5;
+  }
+  
+  .social-link:hover {
+      opacity: 1.0;
+      transition: 0.5s;
+  }
+
+  .carouselButton:hover {
+    transform: scale(1.2);
+  }
+  
+  .media{
+    margin-top: 50px;
+  }
+  .card-description{
+    height: 5rem;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card{
+    margin-top: 5px;
+  }
+  
+  .card-img-top {
+    height: 15rem;
+    object-fit: cover;
+}

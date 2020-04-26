@@ -1,0 +1,386 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Eats - Homemade Food</title>
+</head>
+
+<body>
+    <!-- Login Modal Start -->
+    <div id="loginModal" class="modal fade" role="diaglog">
+        <div class="modal-dialog modal-lg modal-dialog-centered " role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" style="color:black;" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" style="background-color: whitesmoke">
+                    <form>
+                        <div class="form-group col-sm-4">
+                            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                placeholder="Enter email">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label class="sr-only" for="exampleInputPassword3">Password</label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                                placeholder="Password">
+                        </div>
+                        <div class="col-sm-auto">
+                            <div class="form-check">
+                                <input id="RememberCheckBox" class="form-check-input" type="checkbox">
+                                <label for="RememberCheckBox" class="form-check-label"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal End -->
+
+    <!-- Navbar Start -->
+    <div id="home-navbar" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Assets/img/home/logo.png" width="15%" alt="">
+                <span class="navbar-text btn">HOME EATS</span>
+            </a>
+            <div class="col-md-8 col-sm-1">
+                <div class="input-group input-group-md ">
+                    <input type="text" class="form-control" placeholder="Pizza, Burger, Ice Cream...">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-outline-secondary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <b><a class="nav-item nav-link" href="meals.html">Meals</a></b>
+                <a class="nav-item nav-link" href="reviews.html">Reviews</a>
+                <a class="nav-item nav-link btn" id="login_btn">Login</a>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Breadcrumb start -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Meals</li>
+        </ol>
+    </nav>
+    <!-- Breadcrumb end -->
+
+
+    <!-- Cards Start -->
+    <div class="container-fluid m-2" width=100%>
+        <div class="card-deck" width=100%>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <h5 class="card-header bg-warning border-warning text-center">Fatta</h5>
+                    <img src="Assets/img/home/Fatta.jpg" class="card-img-top mx-auto d-block  img-fluid" width=200
+                        height="300" />
+                    <div class="card-body row text-right">
+                        <div class="col-md-3">
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-success">Good</button>
+                                <button type="button" class="btn btn-warning">Okay</button>
+                                <button type="button" class="btn btn-danger">Bad</button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-description">
+                                <p class="card-text text-right">A mix of rice and grilled meat with the magical tomato
+                                    sauce
+                                </p>
+                            </div>
+                            <span class="badge badge-secondary">Up to 10!</span>
+                            <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                                title="Price 5$"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <h5 class="card-header bg-warning border-warning text-center">Pizza <span
+                            class="badge badge-danger">Hot Offer!</span> </h5>
+                    <img src="Assets/img/home/pizza.jpg" class="card-img-top mx-auto d-block  img-fluid" width=200
+                        height="300" />
+                    <div class="card-body row text-right">
+                        <div class="col-md-3">
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-success">Good</button>
+                                <button type="button" class="btn btn-warning">Okay</button>
+                                <button type="button" class="btn btn-danger">Bad</button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-description">
+                                <p class="card-text text-right">Peproni-Mozzarella-mushroom - Onion - Tomato. </p>
+                            </div>
+
+                            <span class="badge badge-secondary">6-8</span>
+                            <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                                title="Price 5$"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <h5 class="card-header bg-warning border-warning text-center">Koshari</h5>
+                    <img src="Assets/img/home/Koshari.jpg" class="card-img-top mx-auto d-block  img-fluid" width=200
+                        height="300" />
+
+                    <div class="card-body row text-right">
+                        <div class="col-md-3">
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-success">Good</button>
+                                <button type="button" class="btn btn-warning">Okay</button>
+                                <button type="button" class="btn btn-danger">Bad</button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-description">
+                                <p class="card-text text-right">The great traditional Egyptian Koshari </p>
+                            </div>
+                            <span class="badge badge-secondary">2-4</span>
+                            <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                                title="Price 5$"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <h5 class="card-header bg-warning border-warning text-center">Pigeon</h5>
+                    <img src="Assets/img/home/pigeon.jpg" class="card-img-top mx-auto d-block  img-fluid " width=200
+                        height="300" />
+
+                    <div class="card-body row text-right">
+                        <div class="col-md-3">
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-success">Good</button>
+                                <button type="button" class="btn btn-warning">Okay</button>
+                                <button type="button" class="btn btn-danger">Bad</button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-description">
+                                <p class="card-text text-right">4 Rice Stuffed Fried Pigeons medium sized. </p>
+                            </div>
+                            <span class="badge badge-secondary">3-4</span>
+
+                            <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                                title="Price 5$"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <h5 class="card-header bg-warning border-warning text-center">Pigeon</h5>
+                    <img src="Assets/img/home/pigeon.jpg" class="card-img-top mx-auto d-block  img-fluid " width=200
+                        height="300" />
+
+                    <div class="card-body row text-right">
+                        <div class="col-md-3">
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-success">Good</button>
+                                <button type="button" class="btn btn-warning">Okay</button>
+                                <button type="button" class="btn btn-danger">Bad</button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-description">
+                                <p class="card-text text-right">4 Rice Stuffed Fried Pigeons medium sized. </p>
+                            </div>
+                            <span class="badge badge-secondary">3-4</span>
+
+                            <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                                title="Price 5$"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <h5 class="card-header bg-warning border-warning text-center">Koshari</h5>
+                    <img src="Assets/img/home/Koshari.jpg" class="card-img-top mx-auto d-block  img-fluid" width=200
+                        height="300" />
+
+                    <div class="card-body row text-right">
+                        <div class="col-md-3">
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-success">Good</button>
+                                <button type="button" class="btn btn-warning">Okay</button>
+                                <button type="button" class="btn btn-danger">Bad</button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-description">
+                                <p class="card-text text-right">The great traditional Egyptian Koshari </p>
+                            </div>
+                            <span class="badge badge-secondary">2-4</span>
+                            <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                                title="Price 5$"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <h5 class="card-header bg-warning border-warning text-center">Pizza <span
+                            class="badge badge-danger">Hot Offer!</span> </h5>
+                    <img src="Assets/img/home/pizza.jpg" class="card-img-top mx-auto d-block  img-fluid" width=200
+                        height="300" />
+                    <div class="card-body row text-right">
+                        <div class="col-md-3">
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-success">Good</button>
+                                <button type="button" class="btn btn-warning">Okay</button>
+                                <button type="button" class="btn btn-danger">Bad</button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-description">
+                                <p class="card-text text-right">Peproni-Mozzarella-mushroom - Onion - Tomato. </p>
+                            </div>
+
+                            <span class="badge badge-secondary">6-8</span>
+                            <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                                title="Price 5$"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <h5 class="card-header bg-warning border-warning text-center">Fatta</h5>
+                    <img src="Assets/img/home/Fatta.jpg" class="card-img-top mx-auto d-block  img-fluid" width=200
+                        height="300" />
+                    <div class="card-body row text-right">
+                        <div class="col-md-3">
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-success">Good</button>
+                                <button type="button" class="btn btn-warning">Okay</button>
+                                <button type="button" class="btn btn-danger">Bad</button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-description">
+                                <p class="card-text text-right">A mix of rice and grilled meat with the magical tomato
+                                    sauce
+                                </p>
+                            </div>
+                            <span class="badge badge-secondary">Up to 10!</span>
+                            <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                                title="Price 5$"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Cards end -->
+
+    <!-- Pagination start -->
+    <nav aria-label="Page navigation example">
+        <ul class=" pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- pagination end -->
+    <!-- Footer Start -->
+    <div class="jumbotron jumbotron-fluid mt-5 mb-0 text-center bg-light">
+        <div class="container">
+            <h1 id="contact" class="display-6 font-weight-light">HOME EATS</h1>
+            <div class="btn-group btn-group-lg mt-3 mb-3">
+                <a class="btn" href="#"><img class="social-link" src="Assets/img/home/facebook.png" alt="facebook"></a>
+                <a class="btn" href="#"><img class="social-link" src="Assets/img/home/twitter.png" alt="twitter"></a>
+                <a class="btn" href="#"><img class="social-link" src="Assets/img/home/github.png" alt="github"></a>
+            </div>
+
+            <hr class="my-2">
+
+            <ul class="list-group list-group-horizontal-md justify-content-center mt-4">
+                <li class="list-group-item list-group-item-dark col-md-4">
+                    <h6>ADDRESS</h6>
+                    <p>123 Ramses Street, Cairo, Egypt</p>
+                </li>
+                <li class="list-group-item list-group-item-dark col-md-4">
+                    <h6>EMAIL</h6>
+                    <p>contact@homeeats.com</p>
+                </li>
+                <li class="list-group-item list-group-item-dark col-md-4">
+                    <h6>MOBILE</h6>
+                    <p>+201000000000</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Assets/scripts/meals.js"></script>
+</body>
+
+</html>

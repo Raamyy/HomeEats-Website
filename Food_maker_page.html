@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Home Eats</title>
+  <script>
+    $(document).ready(function () {
+        // executes when HTML-Document is loaded and DOM is ready
+        console.log("document is ready");
+
+
+        $(".card").hover(
+            function () {
+                $(this).addClass('shadow-lg').css('cursor', 'pointer');
+            }, function () {
+                $(this).removeClass('shadow-lg');
+            }
+        );
+
+        // document ready  
+    });
+</script>
+<style>
+    .card-img-top {
+        height: 15rem;
+        object-fit: cover;
+    }
+</style>
+</head>
+
+<body>
+  <div class="header-bg ">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row row-header">
+          <div class="col-xs-12 col-md-9">
+            <h1>Home Eats</h1>
+            <h3>Welcome!! Happy to Serve You   </h3>
+          </div>
+          <div class=" col-xs-12 col-md-3">
+            <img src="img/g73vzua.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark  navbar-expand-sm  fixed-top" id="navbar">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mr-auto" href="index.html"><img src="img/g73vzua.png" height="40" width="41"></a>
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item active"><a class="nav-link" href="index.html"><span
+                  class="fa fa-home fa-lg"></span>Home</a></li>
+            <li class="nav-item"><a class="nav-link" href=""><span class="fa fa-info fa-lg"></span>About
+                Us</a></li>
+            <li class="nav-item"><a class="nav-link" href=""><span class="fa fa-address-card fa-lg"></span>Contact
+                Us</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+              <a href="index.html">
+            <span class="fa fa-sign-out" data-toggle="tooltip" data-placement="left" title="Press Here to LogOut" id="login_btn"></span>LogOut
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">FoodMaker Profile</li>
+    </ol>
+  </nav>
+  <div class="container-fluid" width=100%>
+    <div class="card-deck" width=100%>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <h5 class="card-header bg-warning border-warning text-center">Meal</h5>
+                <img src="img/Stuffed Pigeon.jpg" class="card-img-top mx-auto d-block  img-fluid " width=200 height="300" />
+
+                <div class="card-body row text-right">
+                    <div class="col-md-3">
+                        <div class="btn-group-vertical">
+                            <button type="button" class="btn btn-success">Good</button>
+                            <button type="button" class="btn btn-warning">Okay</button>
+                            <button type="button" class="btn btn-danger">Bad</button>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="card-text text-center">
+                            </h3>Pigeon</h2>
+                        <p class="card-text text-right">4 Rice Stuffed Fried Pigeons medium sized , enough for 3-4 persons </p>
+                        <button class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <h5 class="card-header bg-warning border-warning text-center">Meal</h5>
+                <img src="img/Garlic Butter Parmesian Pasta.jpg" class="card-img-top mx-auto d-block  img-fluid" width=200 height="300" />
+
+                <div class="card-body row text-right">
+                    <div class="col-md-3">
+                        <div class="btn-group-vertical">
+                            <button type="button" class="btn btn-success">Good</button>
+                            <button type="button" class="btn btn-warning">Okay</button>
+                            <button type="button" class="btn btn-danger">Bad</button>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="card-text text-center">
+                            </h3>Pasta</h2>
+                        <p class="card-text text-right">Garlic Butter Parmesian Pasta , enough for 2-4 persons </p>
+                        <button class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <h5 class="card-header bg-warning border-warning text-center">Meal</h5>
+                <img src="img/pizza.jpg" class="card-img-top mx-auto d-block  img-fluid" width=200 height="300" />
+                <div class="card-body row text-right">
+                    <div class="col-md-3">
+                        <div class="btn-group-vertical">
+                            <button type="button" class="btn btn-success">Good</button>
+                            <button type="button" class="btn btn-warning">Okay</button>
+                            <button type="button" class="btn btn-danger">Bad</button>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="card-text text-center">
+                            </h3>Pizza</h2>
+                        <p class="card-text text-right">Peproni-Mozzarella-mushroom - Onion - Tomato 
+                            Enough for 6-8 Persons </p>
+                        <button class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <h5 class="card-header bg-warning border-warning text-center">Meal</h5>
+                <img src="img/Paprika Chicken Pasta.jpg" class="card-img-top mx-auto d-block  img-fluid" width=200 height="300" />
+
+                <div class="card-body row text-right">
+                    <div class="col-md-3">
+                        <div class="btn-group-vertical">
+                            <button type="button" class="btn btn-success">Good</button>
+                            <button type="button" class="btn btn-warning">Okay</button>
+                            <button type="button" class="btn btn-danger">Bad</button>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="card-text text-center">
+                            </h3>Pasta</h2>
+                        <p class="card-text text-right">Paprika Chicken Pasta , enough for 2-4 persons</p>
+                        <button class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="card-deck" width=100%>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <h5 class="card-header bg-warning border-warning text-center">Meal</h5>
+                <img src="img/Stuffed Pigeon.jpg" class="card-img-top mx-auto d-block  img-fluid " width=200 height="300" />
+
+                <div class="card-body row text-right">
+                    <div class="col-md-3">
+                        <div class="btn-group-vertical">
+                            <button type="button" class="btn btn-success">Good</button>
+                            <button type="button" class="btn btn-warning">Okay</button>
+                            <button type="button" class="btn btn-danger">Bad</button>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="card-text text-center">
+                            </h3>Pigeon</h2>
+                        <p class="card-text text-right">4 Rice Stuffed Fried Pigeons medium sized , enough for 3-4 persons </p>
+                        <button class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <h5 class="card-header bg-warning border-warning text-center">Meal</h5>
+                <img src="img/Garlic Butter Parmesian Pasta.jpg" class="card-img-top mx-auto d-block  img-fluid" width=200 height="300" />
+
+                <div class="card-body row text-right">
+                    <div class="col-md-3">
+                        <div class="btn-group-vertical">
+                            <button type="button" class="btn btn-success">Good</button>
+                            <button type="button" class="btn btn-warning">Okay</button>
+                            <button type="button" class="btn btn-danger">Bad</button>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="card-text text-center">
+                            </h3>Pasta</h2>
+                        <p class="card-text text-right">Garlic Butter Parmesian Pasta , enough for 2-4 persons </p>
+                        <button class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <h5 class="card-header bg-warning border-warning text-center">Meal</h5>
+                <img src="img/pizza.jpg" class="card-img-top mx-auto d-block  img-fluid" width=200 height="300" />
+                <div class="card-body row text-right">
+                    <div class="col-md-3">
+                        <div class="btn-group-vertical">
+                            <button type="button" class="btn btn-success">Good</button>
+                            <button type="button" class="btn btn-warning">Okay</button>
+                            <button type="button" class="btn btn-danger">Bad</button>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="card-text text-center">
+                            </h3>Pizza</h2>
+                        <p class="card-text text-right">Peproni-Mozzarella-mushroom - Onion - Tomato 
+                            Enough for 6-8 Persons </p>
+                        <button class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <h5 class="card-header bg-warning border-warning text-center">Meal</h5>
+                <img src="img/Paprika Chicken Pasta.jpg" class="card-img-top mx-auto d-block  img-fluid" width=200 height="300" />
+
+                <div class="card-body row text-right">
+                    <div class="col-md-3">
+                        <div class="btn-group-vertical">
+                            <button type="button" class="btn btn-success">Good</button>
+                            <button type="button" class="btn btn-warning">Okay</button>
+                            <button type="button" class="btn btn-danger">Bad</button>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="card-text text-center">
+                            </h3>Pasta</h2>
+                        <p class="card-text text-right">Paprika Chicken Pasta , enough for 2-4 persons</p>
+                        <button class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<nav aria-label="Page navigation example">
+    <ul class=" pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="Food_maker_page.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="Food_maker_page.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="Food_maker_page.html">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
