@@ -94,24 +94,31 @@
     <!-- Apply as Home Chef Modal End -->
 
     <!-- Navbar Start -->
-    <div id="home-navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div id="home-navbar" class="navbar navbar-expand-md navbar-dark fixed-top ">
+
+
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="Assets/img/home/logo.png" width="15%" alt="">
-                <span class="navbar-text btn">HOME EATS</span>
-            </a>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand col-md-12 d-inline" href="index.html">
+                        <img src="Assets/img/home/logo.png" width="15%" alt="">
+                        <span class="navbar-text btn">HOME EATS</span>
+                    </a>
+                </div>
+            </div>
             <div class="col-md-8 col-sm-1">
                 <div class="input-group input-group-md ">
-                    <input type="text" class="form-control" placeholder="Pizza, Burger, Ice Cream...">
+                    <input type="text" class="form-control small" placeholder="Pizza, Burger, Ice Cream...">
                     <div class="input-group-append">
                         <button type="button" class="btn btn-outline-secondary">Search</button>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+
 
         <div class="collapse navbar-collapse" id="collapse_target">
             <div class="navbar-nav ml-auto">
@@ -242,24 +249,24 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active text-center">
                             <img class="d-block img-fluid" src="Assets/img/home/FoodBuyer.jpeg" alt="family_eating">
-                            <div class="carousel-caption d-none d-md-block">
-                                <button type="button" class="btn btn-primary btn-lg carouselButton ">
+                            <div class="carousel-caption ">
+                                <button type="button" class="btn btn-primary btn-sm carouselButton ">
                                     Sign Up as Food Buyer
                                 </button>
                             </div>
                         </div>
                         <div class="carousel-item text-center">
-                            <img class="d-block img-fluid" src="Assets/img/home/HomeChef.jpg" alt="Food Maker">
-                            <div class="carousel-caption d-none d-md-block">
-                                <button id="ApplyChef_btn" type="button" class="btn btn-primary btn-lg carouselButton ">
+                            <img class="d-block img-fluid " src="Assets/img/home/HomeChef.jpg" alt="Food Maker">
+                            <div class="carousel-caption ">
+                                <button id="ApplyChef_btn" type="button" class="btn btn-primary btn-sm carouselButton ">
                                     Apply as a Home Chef
                                 </button>
                             </div>
                         </div>
                         <div class="carousel-item text-center">
                             <img class="d-block img-fluid" src="Assets/img/home/deliveryBoy.png" alt="Delivery Boy">
-                            <div class="carousel-caption d-none d-md-block">
-                                <button type="button" class="btn btn-primary btn-lg carouselButton ">
+                            <div class="carousel-caption ">
+                                <button type="button" class="btn btn-primary btn-sm carouselButton ">
                                     Apply as Delivery Boy
                                 </button>
                             </div>
