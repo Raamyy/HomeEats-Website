@@ -54,28 +54,33 @@
     <!-- Navbar Start -->
     <div id="home-navbar" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="Assets/img/home/logo.png" width="15%" alt="">
-                <span class="navbar-text btn">HOME EATS</span>
-            </a>
-            <div class="col-md-8 col-sm-1">
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand col-md-12 d-inline" href="index.html">
+                        <img src="Assets/img/home/logo.png" width="15%" alt="">
+                        <span class="navbar-text btn">HOME EATS</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8 d-none d-lg-block">
                 <div class="input-group input-group-md ">
-                    <input type="text" class="form-control" placeholder="Pizza, Burger, Ice Cream...">
+                    <input type="text" class="form-control small" placeholder="Pizza, Burger, Ice Cream...">
                     <div class="input-group-append">
                         <button type="button" class="btn btn-outline-secondary">Search</button>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+
 
         <div class="collapse navbar-collapse" id="collapse_target">
             <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link" href="index.html">Home</a>
+                <b><a class="nav-item nav-link" href="index.html">Home</a></b>
                 <a class="nav-item nav-link" href="meals.html">Meals</a>
-                <b><a class="nav-item nav-link" href="reviews.html">Reviews</a></b>
+                <a class="nav-item nav-link" href="reviews.html">Reviews</a>
                 <a class="nav-item nav-link btn" id="login_btn">Login</a>
             </div>
         </div>
