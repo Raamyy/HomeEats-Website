@@ -7,12 +7,6 @@ $(document).on('scroll', function () {
 })
 
 $(document).ready(function () {
-    $("#login_btn").click(function () {
-        $("#loginModal").modal();
-    });
-});
-
-$(document).ready(function () {
     $("#ApplyChef_btn").click(function () {
         $("#ChefModal").modal();
     });

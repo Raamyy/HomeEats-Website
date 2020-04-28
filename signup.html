@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <title>Home Eats - Sign up</title>
+
+</head>
+
+<body id="account-bg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-10">
+                <form class="bg-white" style="margin-top: 5%;" action="dashboard.html">
+                    <h1 class="px-3 pt-3">Create account</h1>
+                    <div class="form-row px-3">
+                        <div class="form-group col-md-6">
+                            <label for="inputName">First name</label>
+                            <input type="text" class="form-control" id="inputFName" placeholder="Enter First Name"
+                                data-trigger="focus" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="inputName">Last name</label>
+                            <input type="text" class="form-control" id="inputLName" placeholder="Enter Last Name"
+                                data-trigger="focus" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group px-3">
+                        <label for="inputEmail">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email"
+                            data-toggle="tooltip" data-placement="right" title="user@example.com" data-trigger="focus"
+                            required>
+                    </div>
+
+                    <div class="form-group px-3">
+                        <label for="inputPassword">Password</label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Enter Password"
+                            data-toggle="tooltip" data-placement="right" title="At least 8 characters"
+                            data-trigger="focus" required>
+                    </div>
+
+                    <div class="form-group px-3">
+                        <label for="inputAccountType" class="d-block">Account type:</label>
+                        <div class="custom-control custom-radio custom-control-inline active">
+                            <input type="radio" id="inputFoodBuyerRadio" class="custom-control-input" name="AccountType"
+                                value="foodBuyer">
+                            <label class="custom-control-label" for="inputFoodBuyerRadio">Food buyer</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="inputFoodMakerRadio" class="custom-control-input" value="foodMaker"
+                                name="AccountType">
+                            <label class="custom-control-label" for="inputFoodMakerRadio">Home chef</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="inputDeliveryBoyRadio" class="custom-control-input"
+                                value="deliveryBoy" name="AccountType">
+                            <label class="custom-control-label" for="inputDeliveryBoyRadio">Delivery boy</label>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-warning mx-3 mb-3 px-5">Create account</button>
+                        <p class="d-block pb-3">Already have an account? <a href="login.html">Login</a></p>
+                    </div>
+                </form>
+                <a class="pb-3" href="index.html">&larr; Back to home page</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Assets/scripts/signup.js"></script>
+</body>
+
+</html>

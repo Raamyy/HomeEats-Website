@@ -1,0 +1,172 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <title>Home Eats - Dashboard</title>
+
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div id="home-navbar" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand col-md-12 d-inline" href="index.html">
+                        <img src="Assets/img/home/logo.png" width="15%" alt="">
+                        <span class="navbar-text btn">HOME EATS</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8 d-none d-lg-block">
+                <div class="input-group input-group-md ">
+                    <input type="text" class="form-control small" placeholder="Pizza, Burger, Ice Cream...">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-outline-secondary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="meals.html">Meals</a>
+                <a class="nav-item nav-link" href="reviews.html">Reviews</a>
+                <a class="nav-item nav-link" id="login_btn" href="login.html">Logout</a>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <div class="container mt-1">
+        <div class="alert alert-success collapse" id="saveAlert" role="alert">
+            Profile information <strong>updated</strong> successfully.
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="text-center mb-4">
+                    <img id="profile-avatar" src="Assets/img/account/boy-avatar.png" alt="">
+                    <h4>Pola Mikhail</h4>
+                </div>
+
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-tab-cart" data-toggle="pill" href="#v-pills-cart" role="tab"
+                        aria-controls="v-pills-cart" aria-selected="true">Cart</a>
+                    <a class="nav-link" id="v-pills-tab-profile" data-toggle="pill" href="#v-pills-profile" role="tab"
+                        aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-cart" role="tabpanel"
+                        aria-labelledby="v-pills-cart-tab">
+                        <h1 class="display-5">Cart</h1>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab">
+                        <h1 class="display-5">Profile</h1>
+                        <div class="col-md-10 col-sm-12">
+                            <form style="margin-top: 5%;">
+                                <div class="form-row px-3">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputName">First name</label>
+                                        <input type="text" class="form-control" id="inputFName"
+                                            placeholder="Enter First Name" value="Pola">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="inputName">Last name</label>
+                                        <input type="text" class="form-control" id="inputLName"
+                                            placeholder="Enter Last Name" value="Mikhail">
+                                    </div>
+                                </div>
+
+                                <div class="form-group px-3">
+                                    <label for="inputEmail">Email address</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email"
+                                        data-toggle="tooltip" data-placement="right" title="user@example.com"
+                                        value="pola@gmail.com">
+                                </div>
+
+                                <div class="form-group px-3">
+                                    <label for="inputPassword">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword"
+                                        placeholder="Enter Password" data-toggle="tooltip" data-placement="right"
+                                        title="At least 8 characters" value="password">
+                                </div>
+
+                                <div class="form-group px-3">
+                                    <label for="inputPassword">Gender</label>
+                                    <div class="btn-group mx-3" role="group">
+                                        <button type="button" class="btn btn-secondary">Male</button>
+                                        <button type="button" class="btn btn-secondary">Female</button>
+                                    </div>
+                                </div>
+
+                                <div class="text-right mt-3 px-3">
+                                    <a href="">Cancel</a>
+                                    <button type="button" class="btn btn-primary ml-2 my-3 px-5" data-toggle="modal"
+                                        data-target="#saveChangesModal">
+                                        Save changes
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="saveChangesModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit profile</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to save data changes?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" id="saveChangesModalButton" class="btn btn-success" data-dismiss="modal">Save
+                        changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Assets/scripts/dashboard.js"></script>
+</body>
+
+</html>

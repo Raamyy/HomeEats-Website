@@ -6,11 +6,6 @@ $(document).ready(function () {
     }, 2000)
 })
 
-$(document).ready(function () {
-    $("#login_btn").click(function () {
-        $("#loginModal").modal();
-    });
-});
 
 $(function () {
     $('[data-toggle=popover]').popover({
