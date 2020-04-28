@@ -11,3 +11,11 @@ $(document).ready(function () {
         $("#loginModal").modal();
     });
 });
+
+$(function () {
+    $('[data-toggle=popover]').popover({
+        trigger: 'hover',
+        html: true,
+        placement: "top",
+    })
+});
