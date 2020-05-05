@@ -22,3 +22,12 @@ $(function () {
         trigger: 'foucs',
     });
 });
+
+$(document).ready(function () {
+    console.log($("#content"))
+    $("#content").hide()
+    setTimeout(function () {
+        $("#loader").hide();
+        $("#content").show();
+    }, 2000)
+})
