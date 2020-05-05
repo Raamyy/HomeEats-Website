@@ -1,5 +1,6 @@
 $(document).ready(function () {
     console.log("ready")
+    $("#content").hide()
     setTimeout(function () {
         $("#loader").hide();
         $("#content").show();
