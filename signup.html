@@ -30,7 +30,7 @@
                     <h1 class="px-3 pt-3">Create account</h1>
                     <div class="form-row px-3">
                         <div class="form-group col-md-6">
-                            <label for="inputName">First name</label>
+                            <label for="inputName">First name</label> <span class="text-danger">*</span>
                             <input type="text" class="form-control" id="inputFName" placeholder="Enter First Name"
                                 data-trigger="focus" required>
                         </div>
@@ -38,26 +38,27 @@
                         <div class="form-group col-md-6">
                             <label for="inputName">Last name</label>
                             <input type="text" class="form-control" id="inputLName" placeholder="Enter Last Name"
-                                data-trigger="focus" required>
+                                data-trigger="focus">
                         </div>
                     </div>
 
                     <div class="form-group px-3">
-                        <label for="inputEmail">Email address</label>
+                        <label for="inputEmail">Email address</label> <span class="text-danger">*</span>
                         <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email"
                             data-toggle="tooltip" data-placement="right" title="user@example.com" data-trigger="focus"
                             required>
                     </div>
 
                     <div class="form-group px-3">
-                        <label for="inputPassword">Password</label>
+                        <label for="inputPassword">Password</label> <span class="text-danger">*</span>
                         <input type="password" class="form-control" id="inputPassword" placeholder="Enter Password"
                             data-toggle="tooltip" data-placement="right" title="At least 8 characters"
                             data-trigger="focus" required>
                     </div>
 
                     <div class="form-group px-3">
-                        <label for="inputAccountType" class="d-block">Account type:</label>
+                        <label for="inputAccountType" class="d-block">Account type: <span
+                                class="text-danger">*</span></label>
                         <div class="custom-control custom-radio custom-control-inline active">
                             <input type="radio" id="inputFoodBuyerRadio" class="custom-control-input" name="AccountType"
                                 value="foodBuyer">
