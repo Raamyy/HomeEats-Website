@@ -72,3 +72,43 @@
   border-left: 6px solid silver;
   height: 100%;
 }
+
+#product-slide0 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("../img/product/chicken.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#product-slide1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("../img/product/dessert.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-scale {
+  transition: 0.3s;
+}
+
+.img-scale:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.card > a {
+  color: rgba(0, 0, 0, 1);
+}
+
+.card > a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.cart-img {
+  width: 30px;
+  height: auto;
+}
