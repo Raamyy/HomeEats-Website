@@ -35,7 +35,7 @@
   }
   
   .media{
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .card-description{
     height: 5rem;
@@ -116,4 +116,10 @@
 .review-avatar {
   width: 64px;
   height: auto;
+}
+
+.media-body{
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
