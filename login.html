@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <title>Home Eats - Login</title>
-
 </head>
 
 <body id="account-bg">
@@ -16,7 +15,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6 col-sm-12">
-                <form class="bg-white" style="margin-top: 20%;" action="dashboard.html">
+                <form id="loginForm" class="bg-white" style="margin-top: 20%;" action="dashboard.html">
                     <h1 class="px-3 pt-3">Login</h1>
                     <div class="form-group px-3">
                         <label for="inputEmail">Email Address</label>
@@ -27,6 +26,11 @@
                         <label for="inputPassword">Password</label>
                         <input type="password" class="form-control" id="inputPassword" placeholder="Enter Password"
                             required>
+                    </div>
+                    <div class="container" id="wrongPasswordAlert">
+                        <div class="alert alert-danger text-center" role="alert">
+                            Incorrect Username or password
+                        </div>
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-warning mx-3 mb-5 px-5">Login</button>
@@ -39,11 +43,34 @@
         </div>
     </div>
 
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAZ9TuDV-CMJaqQkPXMh1e9nnr7KnCBEmo",
+            authDomain: "home-eats-c2c26.firebaseapp.com",
+            databaseURL: "https://home-eats-c2c26.firebaseio.com",
+            projectId: "home-eats-c2c26",
+            storageBucket: "home-eats-c2c26.appspot.com",
+            messagingSenderId: "80933997349",
+            appId: "1:80933997349:web:cbb7f7cf4ba4e91e97e8cc"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="Assets/scripts/script.js"></script>
+    <script src="Assets/scripts/login.js"></script>
 </body>
 
 </html>
