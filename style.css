@@ -124,3 +124,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+#navbar-brand-img {
+  width: 40px;
+  height: auto;
+  position: relative;
+}

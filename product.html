@@ -25,39 +25,41 @@
 
 <body>
     <!-- Navbar Start -->
-    <div id="home-navbar" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand col-md-12 d-inline" href="index.html">
-                        <img src="Assets/img/home/logo.png" width="15%" alt="">
-                        <span class="navbar-text btn">HOME EATS</span>
-                    </a>
+    <nav id="home-navbar" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="Assets/img/home/logo.png" id="navbar-brand-img">
+                <span class="navbar-text">HOME EATS</span>
+            </a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapse_target">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="meals.html">Meals</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" aria-haspopup="true"
+                            aria-expanded="false" data-toggle="dropdown" href="#">Login</a>
+                        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="btn btn-outline-warning" id="login_btn" href="login.html">Login</a>
+                            <hr>
+                            <a class="dropdown-item" style="color: orange;" href="signup.html">Create an account</a>
+                        </div>
+                    </li>
                 </div>
             </div>
-            <div class="col-md-8 d-none d-lg-block">
-                <div class="input-group input-group-md ">
-                    <input type="text" class="form-control small" placeholder="Pizza, Burger, Ice Cream...">
-                    <div class="input-group-append">
-                        <button type="button" class="btn btn-outline-secondary">Search</button>
-                    </div>
+
+            <div class="input-group input-group-md col-12 col-md-5 col-lg-3 my-3">
+                <input type="text" class="form-control small" placeholder="Pizza, Burger, Ice Cream...">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary">Search</button>
                 </div>
             </div>
         </div>
-
-
-        <div class="collapse navbar-collapse" id="collapse_target">
-            <div class="navbar-nav ml-auto">
-                <b><a class="nav-item nav-link" href="index.html">Home</a></b>
-                <a class="nav-item nav-link" href="meals.html">Meals</a>
-                <a class="nav-item nav-link" href="signup.html">Sign up</a>
-                <a class="nav-item nav-link btn" id="login_btn" href="login.html">Login</a>
-            </div>
-        </div>
-    </div>
+    </nav>
     <!-- Navbar End -->
 
     <nav aria-label="breadcrumb">
