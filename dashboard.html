@@ -14,9 +14,9 @@
 
 <body>
     <!-- Navbar Start -->
-    <nav id="home-navbar" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav id="home-navbar" class="navbar navbar-expand-md navbar-light bg-light sticky-top justify-content-around">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand mr-auto" href="index.html">
                 <img src="Assets/img/home/logo.png" id="navbar-brand-img">
                 <span class="navbar-text">HOME EATS</span>
             </a>
@@ -25,18 +25,18 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="collapse_target">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="index.html">Home</a>
-                    <a class="nav-item nav-link" href="meals.html">Meals</a>
-                    <a class="nav-item btn btn-outline-warning" id="login_btn" href="login.html">Logout</a>
+            <div class="input-group input-group-md col-12 col-md-6 col-lg-6 my-2">
+                <input type="text" class="form-control" placeholder="Pizza, Burger, Ice Cream...">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary">Search</button>
                 </div>
             </div>
 
-            <div class="input-group input-group-md col-12 col-md-5 col-lg-3 my-3">
-                <input type="text" class="form-control small" placeholder="Pizza, Burger, Ice Cream...">
-                <div class="input-group-append">
-                    <button type="button" class="btn btn-outline-secondary">Search</button>
+            <div class="collapse navbar-collapse col-md-3 col-lg-3" id="collapse_target">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item btn btn-outline-warning" id="login_btn" href="login.html">Logout</a>
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="meals.html">Meals</a>
                 </div>
             </div>
         </div>
@@ -82,8 +82,8 @@
                                     <td>
                                         <div class="media">
                                             <div class="d-flex">
-                                                <img src="assets/img/meals/chicken-dish.jpg"
-                                                    class="review-avatar mr-2" alt="">
+                                                <img src="assets/img/meals/chicken-dish.jpg" class="review-avatar mr-2"
+                                                    alt="">
                                             </div>
                                             <div class="media-body">
                                                 <h5>Chicken</h5>
@@ -93,8 +93,7 @@
                                             </div>
                                         </div>
                                         <button type="button" class="btn btn-warning float-right">
-                                            <img src="assets/img/account/trash.png"
-                                                style="width: 20px; height: auto;">
+                                            <img src="assets/img/account/trash.png" style="width: 20px; height: auto;">
                                             Remove
                                         </button>
                                     </td>
@@ -107,8 +106,8 @@
                                     <td>
                                         <div class="media">
                                             <div class="d-flex">
-                                                <img src="assets/img/meals/meat-dish.jpg"
-                                                    class="review-avatar mr-2" alt="">
+                                                <img src="assets/img/meals/meat-dish.jpg" class="review-avatar mr-2"
+                                                    alt="">
                                             </div>
                                             <div class="media-body">
                                                 <h5>Sticky Beef</h5>
@@ -117,8 +116,7 @@
                                             </div>
                                         </div>
                                         <button type="button" class="btn btn-warning float-right">
-                                            <img src="assets/img/account/trash.png"
-                                                style="width: 20px; height: auto;">
+                                            <img src="assets/img/account/trash.png" style="width: 20px; height: auto;">
                                             Remove
                                         </button>
                                     </td>

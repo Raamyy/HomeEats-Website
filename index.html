@@ -62,9 +62,9 @@
     <!-- Apply as Home Chef Modal End -->
 
     <!-- Navbar Start -->
-    <nav id="home-navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+    <nav id="home-navbar" class="navbar navbar-expand-md navbar-dark fixed-top justify-content-around">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand mr-auto" href="index.html">
                 <img src="Assets/img/home/logo.png" id="navbar-brand-img">
                 <span class="navbar-text">HOME EATS</span>
             </a>
@@ -73,26 +73,26 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="collapse_target">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="index.html">Home</a>
-                    <a class="nav-item nav-link" href="meals.html">Meals</a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" aria-haspopup="true"
-                            aria-expanded="false" data-toggle="dropdown" href="#">Login</a>
-                        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="btn btn-outline-warning" id="login_btn" href="login.html">Login</a>
-                            <hr>
-                            <a class="dropdown-item" style="color: orange;" href="signup.html">Create an account</a>
-                        </div>
-                    </li>
+            <div class="input-group input-group-md col-12 col-md-6 col-lg-6 my-2">
+                <input type="text" class="form-control" placeholder="Pizza, Burger, Ice Cream...">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary">Search</button>
                 </div>
             </div>
 
-            <div class="input-group input-group-md col-12 col-md-5 col-lg-3 my-3">
-                <input type="text" class="form-control small" placeholder="Pizza, Burger, Ice Cream...">
-                <div class="input-group-append">
-                    <button type="button" class="btn btn-outline-secondary">Search</button>
+            <div class="collapse navbar-collapse col-md-3 col-lg-3" id="collapse_target">
+                <div class="navbar-nav ml-auto">
+                    <div class="nav-item dropdown">
+                        <a class="btn btn-outline-warning dropdown-toggle" aria-haspopup="true"
+                            aria-expanded="false" data-toggle="dropdown" href="#">Login</a>
+                        <div class="dropdown-menu text-center">
+                            <a class="btn btn-warning px-5" id="login_btn" href="login.html">Login</a>
+                            <hr>
+                            <a class="dropdown-item" style="color: orange;" href="signup.html">Create an account</a>
+                        </div>
+                    </div>
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="meals.html">Meals</a>
                 </div>
             </div>
         </div>
