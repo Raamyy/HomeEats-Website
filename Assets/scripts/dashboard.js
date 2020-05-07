@@ -5,3 +5,5 @@ $('#saveChangesModalButton').click(function () {
         $('#saveAlert').hide('fade');
     }, 3000);
 });
+
+$('.toast').toast('show')
