@@ -1,0 +1,167 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Home Eats - Homemade Food</title>
+
+</head>
+<body>
+   <!-- Navbar Start -->
+   <nav id="home-navbar" class="navbar navbar-expand-md navbar-dark fixed-top justify-content-around">
+    <div class="container-fluid">
+        <a class="navbar-brand mr-auto" href="index.html">
+            <img src="Assets/img/home/logo.png" id="navbar-brand-img">
+            <span class="navbar-text">HOME EATS</span>
+        </a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="input-group input-group-md col-12 col-md-6 col-lg-6 my-2">
+            <input type="text" class="form-control" placeholder="Pizza, Burger, Ice Cream...">
+            <div class="input-group-append">
+                <button type="button" class="btn btn-outline-secondary">Search</button>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse col-md-3 col-lg-3" id="collapse_target">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="meals.html">Meals</a>
+                <div class="nav-item dropleft">
+                    <a class="btn btn-outline-warning dropdown-toggle" aria-haspopup="true" aria-expanded="false"
+                        data-toggle="dropdown" href="#">Account</a>
+                    <div class="dropdown-menu text-center">
+                        <a class="btn btn-warning px-5" id="login_btn" href="login.html">Login</a>
+                        <hr>
+                        <a class="dropdown-item" style="color: orange;" href="signup.html">Create an account</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</nav>
+<div id="home-bg">
+    <div id="home-bg-text" class="text-center">
+        <img src="Assets/img/home/logo.png" width="30%" />
+        <h1 class="display-2 text-uppercase">Home Eats</h1>
+        <h3 class="font-italic font-weight-light">Homemade food for you.</h3>
+    </div>
+</div>
+
+<div id="list-example" class="list-group">
+    <a class="list-group-item list-group-item-action active" href="#list-item-1">What is Home Eats</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-2">How It Works</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-3">Problems We Solve</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-4">Join Us Now</a>
+  </div>
+  <br>
+<br>
+  <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+    <h4 id="list-item-1" style="text-align: center;">What Is Home Eats</h4>
+    <p style="text-align: center;">Home Eats is an online platform connecting talented homebased cooks with hungry
+        <br> professionals to give them access to wholesome fresh homemade food, from the homechef’s kitchen.</p>
+        <br>
+    <h4 id="list-item-2" style="text-align: center;">How It Works</h4>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 col-sm-12">
+                <img src="https://img.icons8.com/color/96/000000/hand-with-smartphone.png" />
+                <h3>Order</h3>
+                <p><b>Step 1: </b>Grab your phone and enter your Home Eats order!</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <img src="https://img.icons8.com/color/96/000000/cooking-pot.png" />
+                <h3>Cook</h3>
+                <p><b>Step 2: </b>Wait for the home made food magic to happen and be cooked!</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <img src="https://img.icons8.com/color/96/000000/pizza-delivery.png" />
+                <h3>Deliver</h3>
+                <p><b>Step 3: </b>Get Your delicious food delivered to your doorstep!</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h4 id="list-item-3" style="text-align: center;">Problems We Solve</h4>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 col-sm-12">
+                <img src="Assets/img/meals/homemademeals.jpg" width="30%"/>
+                <p>Ordering clean food is too expensive</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <img src="Assets/img/meals/clock.png" width="30%"/>
+                <p>It takes too much time to prepare and cook homemade food</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <img src="Assets/img/meals/junkfood.jpg" width="30%" />
+                <p>Junk food is really not healthy</p>
+            </div>
+        </div>
+    </div> 
+    <br>
+    <br>
+    <h4 id="list-item-4"  style="text-align: center;">Join Home Eats Now</h4>
+       <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active text-center">
+                            <img class="d-block img-fluid" src="Assets/img/home/food-buyer.png" alt="Food Buyer">
+                            <div class="carousel-caption">
+                                <a class="btn btn-primary btn-sm carouselButton"
+                                    href="signup.html?accountType=foodBuyer">
+                                    Sign Up as Food Buyer
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img class="d-block img-fluid " src="Assets/img/home/food-maker.png" alt="Food Maker">
+                            <div class="carousel-caption">
+                                <a class="btn btn-primary btn-sm carouselButton "
+                                    href="signup.html?accountType=foodMaker">
+                                    Apply as a Home Chef
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img class="d-block img-fluid" src="Assets/img/home/food-delivery.png" alt="Delivery Boy">
+                            <div class="carousel-caption">
+                                <a class="btn btn-primary btn-sm carouselButton "
+                                    href="signup.html?accountType=deliveryBoy">
+                                    Apply as a Delivery Boy
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Assets/scripts/meals.js"></script>
+</body>
