@@ -15,6 +15,12 @@ $(document).ready(function () {
     $("#ApplyChef_btn").click(function () {
         $("#ChefModal").modal();
     });
+    $("#arrowBtn").click(function () {
+        $(window).scrollTop($('#home-bg').height() - $("#home-navbar").height() + 5);
+        setTimeout(function () {
+            console.log($(window).scrollTop(), $('#home-bg').height())
+        }, 1000)
+    });
 });
 
 $(document).ready(function () {
